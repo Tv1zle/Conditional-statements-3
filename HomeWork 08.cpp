@@ -100,84 +100,20 @@ int main()
     std::cin >> Time;
 
 
-    switch (Time) {
-    case 1:
-        std::cout << "Good night !";
-        break;
-    case 2:
-        std::cout << "Good night !";
-        break;
-    case 3:
-        std::cout << "Good night !";
-        break;
-    case 4:
-        std::cout << "Good night !";
-        break;
-    case 5:
-        std::cout << "Good night !";
-        break;
-    case 6:
-        std::cout << "Good night !";
-        break;
-    case 7:
-        std::cout << "Good morning !";
-        break;
-    case 8:
-        std::cout << "Good morning !";
-        break;
-    case 9:
-        std::cout << "Good morning !";
-        break;
-    case 10:
-        std::cout << "Good morning !";
-        break;
-    case 11:
-        std::cout << "Good morning !";
-        break;
-    case 12:
-        std::cout << "Good day !";
-        break;
-    case 13:
-        std::cout << "Good day !";
-        break;
-    case 14:
-        std::cout << "Good day !";
-        break;
-    case 15:
-        std::cout << "Good day !";
-        break;
-    case 16:
-        std::cout << "Good day !";
-        break;
-    case 17:
-        std::cout << "Good evening !";
-        break;
-    case 18:
-        std::cout << "Good evening !";
-        break;
-    case 19:
-        std::cout << "Good evening !";
-        break;
-    case 20:
-        std::cout << "Good evening !";
-        break;
-    case 21:
-        std::cout << "Good evening !";
-        break;
-    case 22:
-        std::cout << "Good night !";
-        break;
-    case 23:
-        std::cout << "Good night !";
-        break;
-    case 24:
-        std::cout << "Good night !";
-        break;
-    case 0:
-        std::cout << "Good night !";
-        break;
-    default:
-        std::cout << "Good night, forever ...";
+    if (Time >= 0 && Time <= 6) {
+        std::cout << "Good night";
     }
-}
+    else if (Time >= 7 && Time <= 11) {
+        std::cout << "Good morning";
+    }
+   else if (Time >= 12 && Time <= 16) {
+       std::cout << "Good day";
+   }
+   else if (Time >= 17 && Time <= 21) {
+       std::cout << "Good evening";
+   }
+   else {
+       std::cout << "Good night, bruh";
+   }
 
+}
